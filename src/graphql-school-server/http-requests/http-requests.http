@@ -35,9 +35,9 @@ Content-Type: application/graphql
 
 query FindByTitle {
    findByTitle(title: "Hard Gun") {
-   author
-   isbn_13
-   genre
+       author
+       isbn_13
+       genre
    }
 }
 
