@@ -1,0 +1,63 @@
+# returns the possible fields
+GET http://localhost:8080/books/schema.graphql
+
+###
+
+POST http://localhost:8080/books
+Content-Type: application/graphql
+
+query allBooks {
+   allBooks {
+       title
+       author
+   }
+}
+
+###
+
+POST http://localhost:8080/books
+Content-Type: application/graphql
+
+query allBooks {
+   allBooks {
+       title
+       author
+       isbn_13
+       year_of_publication
+       genre
+   }
+}
+
+###
+
+POST http://localhost:8080/books
+Content-Type: application/graphql
+
+query FindByTitle {
+   findByTitle(title: "Hard Gun") {
+   author
+   isbn_13
+   genre
+   }
+}
+
+###
+
+POST http://localhost:8080/books
+Content-Type: application/graphql
+
+mutation SaveBook {
+  saveBook(
+  book: {
+      title: "Neues Buch!"
+      author: "Jan"
+      isbn_13: "187187187187"
+      year_of_publication: "2022"
+      genre: "heeeeeeeeeeee"
+  	}
+  )
+  {
+    title
+    author
+  }
+}
