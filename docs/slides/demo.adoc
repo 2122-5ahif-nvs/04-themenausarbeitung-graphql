@@ -16,7 +16,7 @@ Kaufmann Jan, Hain Lukas
 Server hat fixe Endpoints
 -> Client greift auf diese Endpoints zu
 
-ifdef::backend-html5[image:images/rest-api.png[width=50%]]
+ifdef::backend-html5[image:../images/rest-api.png[width=50%]]
 
 === Underfetching
 
