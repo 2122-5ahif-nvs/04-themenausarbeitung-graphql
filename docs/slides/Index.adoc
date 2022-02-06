@@ -1,9 +1,8 @@
+:stylesheet: ../css/styles.css
 [%notitle]
 == GraphQL
 image::../images/graphQL.png[background, size=cover]
 
-[background-color="#e10098"]
-[font-color="#2c2d89"]
 == Was ist GraphQL?
 
 * eine Query Language für APIs
