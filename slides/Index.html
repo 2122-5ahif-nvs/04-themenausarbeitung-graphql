@@ -428,14 +428,13 @@ document.getElementsByTagName( 'head' )[0].appendChild( link );</script></head><
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre></div></div></div></section><section id="_graphql_2" data-background-color="#2c2d89"><h2>GraphQL</h2><div class="slide-content"><div class="paragraph"><p>Server hat flexiblere Endpoints<br>
 &#8594; Client gibt genau an, was er braucht</p></div>
-<div class="listingblock"><div class="content"><pre class="rouge highlight"><code data-lang="graphql"><span class="k">query</span><span class="w"> </span><span class="n">FindByTitle</span><span class="w"> </span><span class="p">{</span><span class="w">
-   </span><span class="n">findByTitle</span><span class="p">(</span><span class="n">title</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hard Gun"</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+<div class="listingblock"><div class="content"><pre class="rouge highlight"><code data-lang="graphql"><span class="k">query</span><span class="w"> </span><span class="n">allBooks</span><span class="w"> </span><span class="p">{</span><span class="w">
+   </span><span class="n">allBooks</span><span class="w"> </span><span class="p">{</span><span class="w">
+       </span><span class="n">title</span><span class="w">
        </span><span class="n">author</span><span class="w"> </span><span class="p">{</span><span class="w">
            </span><span class="n">name</span><span class="w">
            </span><span class="n">age</span><span class="w">
        </span><span class="p">}</span><span class="w">
-       </span><span class="n">isbn_13</span><span class="w">
-       </span><span class="n">genre</span><span class="w">
    </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span></code></pre></div></div>
 <div class="listingblock"><div class="content"><pre class="rouge highlight"><code data-lang="json"><span class="p">{</span><span class="w">
