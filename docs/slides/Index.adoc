@@ -6,14 +6,13 @@ image::../images/graphQL.png[background, size=cover]
 == Was ist GraphQL?
 
 * eine Query Language für APIs
-* Open Source
+* eine Runtime zur Ausführung dieser Queries
+* Open Source seit 2015
 
 [background-color="#2c2d89"]
-[text-color="#e10098"]
 == Unterschied von GraphQL und Rest
 
 [background-color="#2c2d89"]
-[text-color="#e10098"]
 === Rest
 
 Server hat fixe Endpoints +
@@ -22,7 +21,6 @@ Server hat fixe Endpoints +
 image:../images/rest-api.png[width=100%]
 
 [background-color="#2c2d89"]
-[text-color="#e10098"]
 === Underfetching
 
 Ein Request bringt nicht alle nötigen Daten zurück +
@@ -52,7 +50,6 @@ Ein Request bringt nicht alle nötigen Daten zurück +
 ----
 
 [background-color="#2c2d89"]
-[text-color="#e10098"]
 === Overfetching
 
 Ein Request bringt zu viele Daten zurück +
@@ -75,7 +72,6 @@ Ein Request bringt zu viele Daten zurück +
 ----
 
 [background-color="#2c2d89"]
-[text-color="#e10098"]
 === GraphQL
 
 [source,graphql]
@@ -103,3 +99,10 @@ query allBooks {
   }
 }
 ----
+
+[background-color="#2c2d89"]
+[text-color="#e10098"]
+=== Alternative Implementierungen
+
+image:../images/apollo.png[width=50%]
+image:../images/prisma.png[width=50%]
