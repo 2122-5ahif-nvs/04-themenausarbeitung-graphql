@@ -9,7 +9,10 @@ Content-Type: application/graphql
 query allBooks {
    allBooks {
        title
-       author
+       author {
+           name
+           age
+       }
    }
 }
 
@@ -21,7 +24,10 @@ Content-Type: application/graphql
 query allBooks {
    allBooks {
        title
-       author
+       author {
+           name
+           age
+       }
        isbn_13
        year_of_publication
        genre
@@ -35,7 +41,10 @@ Content-Type: application/graphql
 
 query FindByTitle {
    findByTitle(title: "Hard Gun") {
-       author
+       author {
+           name
+           age
+       }
        isbn_13
        genre
    }
@@ -50,7 +59,10 @@ mutation SaveBook {
   saveBook(
   book: {
       title: "Neues Buch!"
-      author: "Jan"
+      author: {
+           name: "Jan"
+           age: 40
+       }
       isbn_13: "187187187187"
       year_of_publication: "2022"
       genre: "heeeeeeeeeeee"
@@ -58,6 +70,9 @@ mutation SaveBook {
   )
   {
     title
-    author
+    author {
+       name
+       age
+    }
   }
 }
