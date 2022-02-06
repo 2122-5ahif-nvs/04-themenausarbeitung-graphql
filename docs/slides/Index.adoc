@@ -1,10 +1,10 @@
-= GraphQL
-Kaufmann Jan, Hain Lukas
-1.0, 2022-01-30
-image::../images/graphQL.png[background, size=contain]
+[%notitle]
+== GraphQL
+image::../images/graphQL.png[background, size=cover]
+
+[background-color="#e10098]
 == Was ist GraphQL?
 
-image::../images/graphQL.png[background, size=contain]
 * eine Query Language für APIs
 * Open Source
 
