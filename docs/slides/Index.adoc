@@ -9,8 +9,12 @@ image::../images/graphQL.png[background, size=cover]
 * eine Query Language für APIs
 * Open Source
 
+[background-color="#2c2d89"]
+[text-color="#e10098"]
 == Unterschied von GraphQL und Rest
 
+[background-color="#2c2d89"]
+[text-color="#e10098"]
 === Rest
 
 Server hat fixe Endpoints +
@@ -18,27 +22,37 @@ Server hat fixe Endpoints +
 
 image:../images/rest-api.png[width=75%]
 
+[background-color="#2c2d89"]
+[text-color="#e10098"]
 === Underfetching
 
 Ein Request bringt nicht alle nötigen Daten zurück +
 -> mehrere Requests notwendig
 
+[background-color="#2c2d89"]
+[text-color="#e10098"]
 === Overfetching
 
 Ein Request bringt zu viele Daten zurück +
 -> Daten werden umsonst verschickt
 
+[background-color="#2c2d89"]
+[text-color="#e10098"]
 === GraphQL
 
 Server hat flexiblere Endpoints +
 -> Client gibt genau an, was er braucht
 
+[background-color="#2c2d89"]
+[text-color="#e10098"]
 == Verschiedene Implementierungen
 
 GraphQL ist eine Spezifikation +
 keine Implementierung +
 
 
+[background-color="#2c2d89"]
+[text-color="#e10098"]
 === Sprachen
 
 in fast jeder Programmiersprache +
