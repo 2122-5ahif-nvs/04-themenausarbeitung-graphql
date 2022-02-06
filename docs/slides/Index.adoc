@@ -83,14 +83,13 @@ Server hat flexiblere Endpoints +
 
 [source,graphql]
 ----
-query FindByTitle {
-   findByTitle(title: "Hard Gun") {
+query allBooks {
+   allBooks {
+       title
        author {
            name
            age
        }
-       isbn_13
-       genre
    }
 }
 ----
