@@ -1,0 +1,45 @@
+[%notitle]
+= GraphQL
+Kaufmann Jan, Hain Lukas
+1.0, 2022-01-30
+image::../images/graphQL.png[background, size=contain]
+== Was ist GraphQL?
+
+* eine Query Language für APIs
+* Open Source
+
+== Unterschied von GraphQL und Rest
+
+=== Rest
+
+Server hat fixe Endpoints +
+-> Client greift auf diese Endpoints zu
+
+image:../images/rest-api.png[width=75%]
+
+=== Underfetching
+
+Ein Request bringt nicht alle nötigen Daten zurück +
+-> mehrere Requests notwendig
+
+=== Overfetching
+
+Ein Request bringt zu viele Daten zurück +
+-> Daten werden umsonst verschickt
+
+=== GraphQL
+
+Server hat flexiblere Endpoints +
+-> Client gibt genau an, was er braucht
+
+== Verschiedene Implementierungen
+
+GraphQL ist eine Spezifikation +
+keine Implementierung +
+
+
+=== Sprachen
+
+in fast jeder Programmiersprache +
+in verschiedenen Implementierungen
+

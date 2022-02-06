@@ -9,7 +9,7 @@ public class Book {
 
     public String title;
 
-    public String author;
+    public Author author;
 
     @JsonbProperty("year_of_publication")
     public int yearOfPublication;
@@ -20,7 +20,7 @@ public class Book {
     @JsonbDateFormat("yyyy-MM-dd")
     public Instant creationTime;
 
-    public Book(String isbn13, String title, String author, int yearOfPublication, String genre, Instant creationTime) {
+    public Book(String isbn13, String title, Author author, int yearOfPublication, String genre, Instant creationTime) {
         this.isbn13 = isbn13;
         this.title = title;
         this.author = author;
@@ -48,11 +48,11 @@ public class Book {
         this.title = title;
     }
 
-    public String getAuthor() {
+    public Author getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public void setAuthor(Author author) {
         this.author = author;
     }
 
