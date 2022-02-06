@@ -3,7 +3,6 @@
 image::../images/graphQL.png[background, size=cover]
 
 [background-color="#2c2d89"]
-[text-color="#e10098"]
 == Was ist GraphQL?
 
 * eine Query Language für APIs
@@ -29,12 +28,51 @@ image:../images/rest-api.png[width=75%]
 Ein Request bringt nicht alle nötigen Daten zurück +
 -> mehrere Requests notwendig
 
+[source,json]
+----
+{
+  "book": {
+    "title": "A Rose By Any Name",
+    "author_id": 1,
+    "isbn_13": "7656789876569",
+    "year_of_publication": 1923,
+    "genre": "Romance"
+  }
+}
+----
+[source,json]
+----
+{
+  "author": {
+    "id": 1,
+    "name": "Katharine Ellis",
+    "age": 31
+  }
+}
+----
+
 [background-color="#2c2d89"]
 [text-color="#e10098"]
 === Overfetching
 
 Ein Request bringt zu viele Daten zurück +
 -> Daten werden umsonst verschickt
+
+[source,json]
+----
+{
+  "book": {
+    "title": "A Rose By Any Name",
+    "author": {
+      "name": "Katharine Ellis",
+      "age": 31
+    },
+    "isbn_13": "7656789876569",
+    "year_of_publication": 1923,
+    "genre": "Romance"
+  }
+}
+----
 
 [background-color="#2c2d89"]
 [text-color="#e10098"]
@@ -43,18 +81,29 @@ Ein Request bringt zu viele Daten zurück +
 Server hat flexiblere Endpoints +
 -> Client gibt genau an, was er braucht
 
-[background-color="#2c2d89"]
-[text-color="#e10098"]
-== Verschiedene Implementierungen
+[source,graphql]
+----
+query FindByTitle {
+   findByTitle(title: "Hard Gun") {
+       author {
+           name
+           age
+       }
+       isbn_13
+       genre
+   }
+}
+----
 
-GraphQL ist eine Spezifikation +
-keine Implementierung +
-
-
-[background-color="#2c2d89"]
-[text-color="#e10098"]
-=== Sprachen
-
-in fast jeder Programmiersprache +
-in verschiedenen Implementierungen
-
+[source,json]
+----
+{
+  "book": {
+    "title": "A Rose By Any Name",
+    "author": {
+    "name": "Katharine Ellis",
+    "age": 31
+    }
+  }
+}
+----
