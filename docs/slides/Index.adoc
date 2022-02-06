@@ -2,7 +2,7 @@
 == GraphQL
 image::../images/graphQL.png[background, size=cover]
 
-[background-color="#e10098]
+[background-color="#e10098"]
 == Was ist GraphQL?
 
 * eine Query Language für APIs
