@@ -1,4 +1,4 @@
-:stylesheet: ../css/styles.css
+:customcss: ../css/styles.css
 [%notitle]
 == GraphQL
 image::../images/graphQL.png[background, size=cover]
