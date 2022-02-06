@@ -78,10 +78,6 @@ Ein Request bringt zu viele Daten zurück +
 [text-color="#e10098"]
 === GraphQL
 
-Server hat flexiblere Endpoints +
--> Client gibt genau an, was er braucht
-[.float-group]
-'''
 [source,graphql]
 ----
 query allBooks {
@@ -107,4 +103,3 @@ query allBooks {
   }
 }
 ----
-'''
