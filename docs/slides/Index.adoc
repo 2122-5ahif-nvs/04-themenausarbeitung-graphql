@@ -80,7 +80,8 @@ Ein Request bringt zu viele Daten zurück +
 
 Server hat flexiblere Endpoints +
 -> Client gibt genau an, was er braucht
-
+[.float-group]
+'''
 [source,graphql]
 ----
 query allBooks {
@@ -106,3 +107,4 @@ query allBooks {
   }
 }
 ----
+'''
