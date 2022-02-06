@@ -1,7 +1,7 @@
 = GraphQL
-image::../images/graphQL.png[background, size=contain]
 Kaufmann Jan, Hain Lukas
 1.0, 2022-01-30
+image::../images/graphQL.png[background, size=contain]
 == Was ist GraphQL?
 
 image::../images/graphQL.png[background, size=contain]
