@@ -1,1 +1,82 @@
 = GraphQL
+
+== Beispielprojekt
+
+=== Ausführen
+
+Im _src_ Ordner befindet sich ein Beispielprojekt.
+
+Projekt mithilfe der https://quarkus.io/guides/cli-tooling[Quarkus CLI] starten:
+
+[source,shell script]
+----
+quarkus dev --clean
+----
+
+Sollte man die https://quarkus.io/guides/cli-tooling[Quarkus CLI] nicht installiert haben muss man folgenden Befehl benutzen:
+
+[source,shell script]
+----
+./mvnw clean compile quarkus:dev
+----
+
+=== Ausprobieren
+
+Im Projektordner befindet sich ein http-requests Ordner in dem eine request.http Datei liegt. In dieser Datei sind verschiedene Requests vordefiniert.
+
+Quarkus bietet auch ein http://localhost:8080/q/graphql-ui/[GraphQL-GUI] an.
+
+== Was ist GraphQL?
+
+* eine Query Language für APIs
+* eine Runtime zur Ausführung dieser Queries
+* Open Source seit 2015
+
+=== Underfetching
+
+Ein Request bringt nicht alle nötigen Daten zurück +
+-> mehrere Requests notwendig
+
+[source,json]
+----
+{
+  "book": {
+    "title": "A Rose By Any Name",
+    "author_id": 1,
+    "isbn_13": "7656789876569",
+    "year_of_publication": 1923,
+    "genre": "Romance"
+  }
+}
+----
+[source,json]
+----
+{
+  "author": {
+    "id": 1,
+    "name": "Katharine Ellis",
+    "age": 31
+  }
+}
+----
+
+=== Overfetching
+
+Ein Request bringt zu viele Daten zurück +
+-> Daten werden umsonst verschickt
+
+[source,json]
+----
+{
+  "book": {
+    "title": "A Rose By Any Name",
+    "author": {
+      "name": "Katharine Ellis",
+      "age": 31
+    },
+    "isbn_13": "7656789876569",
+    "year_of_publication": 1923,
+    "genre": "Romance"
+  }
+}
+----
